@@ -2,7 +2,7 @@ resource "aws_s3_bucket" "tfstate" {
   bucket = "h4m24-terraformstate"
   acl    = "private"
   versioning {
-    enabled = true
+    enabled = false
   }
 }
 
