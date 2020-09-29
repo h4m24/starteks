@@ -43,17 +43,20 @@ Minimum set of terraform configurations to create an EKS cluster that is secure 
   ```json
   {
     "registry.terraform.io/hashicorp/aws": {
-      "hash": "h1:bZGW9CuoAOWqM3TVKa4kbnQhoZ9pFS+wH33Q/xRyXcw=",
-      "version": "3.7.0"
+      "version": "3.8.0"
     }
   }
   ```
 
 
 ### To Do
-- EKS encryption settings
-- Create AWS IAM configs
-- fixed AWS provider version
-- fixed k8s/eks deployed version
+- Create AWS IAM configs for service accounts
+- ~~EKS encryption settings~~
+- ~~fixed AWS provider version~~
+- ~~fixed k8s/eks deployed version~~
 - create makefile to manage the repo
 - consider service mesh (istio vs aws mesh), L7 and L4 services connectivity 
+- Update KMS key policy
+- Autoscaling of worker nodes
+- Spot Instances for worker nodes
+- Spot.io for worker nodes
