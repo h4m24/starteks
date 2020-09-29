@@ -4,6 +4,6 @@ terraform {
     bucket         = "h4m24-terraformstate"
     dynamodb_table = "terraform-state-lock-dynamo"
     region         = "eu-west-1"
-    key            = "LockID"
+    key            = "eks"
   }
 }

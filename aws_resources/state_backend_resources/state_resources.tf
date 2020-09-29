@@ -1,6 +1,7 @@
 resource "aws_s3_bucket" "tfstate" {
   bucket = "h4m24-terraformstate"
   acl    = "private"
+  force_destroy = true
   versioning {
     enabled = false
   }

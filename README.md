@@ -33,7 +33,7 @@ make teardown # to destroy the whole stack
   ![Subnet_Setup](static/subnets_setup.png)
 - as a security measure of EKS, all EKS resources must be in a private subnets with private networking(in this repo the provided setup  exposes k8s API publicly)
 - EKS security groups are very permissive for inter-cluster networking and might need to be reviewed
-- Sate backend for terraform is configured to be s3, in this repo the versioning is disabled which I recommend that it needs to be enabled for this repo when put in a real use case.
+- Sate backend for terraform is configured to be s3, in this repo the versioning is disabled (and delete `force_destroy = true` ) which I recommend that it needs to be enabled for this repo when put in a real use case.
 
 #### **Second: k8s Cluster Configurations**
 - **Configure and setup AWS/IAM RBAC setup**
