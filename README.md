@@ -9,7 +9,7 @@ Minimum set of terraform configurations to create an EKS cluster that is usable 
  The general steps are:
  - Create needed AWS resources in a specific AWS region
 
-#### First AWS resources
+#### First: AWS resources
 
 this directory contains the cloud infrastructure needed for usage of AWS EKS, this is provisioned using terraform.
 
@@ -22,7 +22,7 @@ this directory contains the cloud infrastructure needed for usage of AWS EKS, th
   ![Subnet_Setup](static/subnets_setup.png)
 - as a security measure of EKS, all EKS resources must be in a private subnets with private networking(in this repo the provided setup  exposes k8s API publicly)
 
-#### Second Cluster Configurations
+#### Second: Cluster Configurations
 - configure and setup AWS/IAM RBAC setup
 - setup affinity and anti affinity roles
 - AWS secret manager
