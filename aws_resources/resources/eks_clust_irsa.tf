@@ -6,9 +6,9 @@ resource "aws_iam_openid_connect_provider" "aws_eks_openid_connector" {
 }
 
 # example of a service on EKS and its Iam Role and its assume role Policy
-resource "aws_iam_role" "aws_eks_service_role" {
+resource "aws_iam_role" "aws_eks_test_service_role" {
   assume_role_policy = data.aws_iam_policy_document.aws_eks_example_services_assume_role_policy.json
-  name               = "aws_eks_service_role"
+  name               = "aws_eks_test_service_role"
 }
 
 data "aws_iam_policy_document" "aws_eks_example_services_assume_role_policy" {
