@@ -56,7 +56,7 @@ Minimum set of terraform configurations to create an EKS cluster that is secure 
 - ~~fixed k8s/eks deployed version~~
 - create Service account configuration inside k8s
 - create makefile to manage the repo
-- consider service mesh (istio vs aws mesh), L7 and L4 services connectivity 
+- consider service mesh (istio vs aws mesh)/ L7 and L4 services connectivity 
 - Update KMS key policy
 - Autoscaling of worker nodes
 - Spot Instances for worker nodes
