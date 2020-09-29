@@ -5,6 +5,19 @@ Minimum set of terraform configurations to create an EKS cluster that is secure 
 > This repository will give you a sane start of configurations to deploy K8s in AWS.
 
 
+### TLDR
+```bash
+make test # to to check dependencies
+```
+
+```bash
+make buildup # to provision the whole stack
+```
+
+```bash
+make teardown # to destroy the whole stack
+```
+
 ### How do i use this?
  The general steps are:
 
@@ -54,8 +67,8 @@ Minimum set of terraform configurations to create an EKS cluster that is secure 
 - ~~EKS encryption settings~~
 - ~~fixed AWS provider version~~
 - ~~fixed k8s/eks deployed version~~
-- Create Service account configuration inside k8s
-- Create makefile to manage the repo
+- ~~Create Service account configuration inside k8s~~
+- ~~Create makefile to manage the repo~~
 - Service mesh (istio vs aws mesh) L7 
 - Calico network policies/ L4 services connectivity 
 - Update KMS key policy
