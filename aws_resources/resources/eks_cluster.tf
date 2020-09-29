@@ -7,7 +7,7 @@ resource "aws_eks_cluster" "aws_eks" {
 
     # control plane and nodegroup security groups
     # security_group_ids      = compact([local.cluster_security_group_id])
-    
+
     endpoint_private_access = true
     endpoint_public_access  = true
   }
