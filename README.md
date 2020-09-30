@@ -69,6 +69,8 @@ make teardown # to destroy the whole stack
 - ~~fixed k8s/eks deployed version~~
 - ~~Create Service account configuration inside k8s~~
 - ~~Create makefile to manage the repo~~
+- Configure Users/groups access to AWS Account
+- Configure users and groups access to AWS EKS 
 - Service mesh (istio vs aws mesh) L7 
 - Calico network policies/ L4 services connectivity 
 - Update KMS key policy
