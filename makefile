@@ -8,7 +8,9 @@ buildup:
 	cd aws_resources/state_backend_resources && terraform init && terraform apply -auto-approve
 	cd aws_resources/resources && terraform init && terraform apply -auto-approve
 	aws eks update-kubeconfig --name EKSTEST --alias EKSTEST
+	kubectl delete configmap -n kube-system aws-auth
 	cd k8s_config && terraform init && terraform apply -auto-approve
+
 
 test:	
 	test -f ~/.aws/credentials && echo "~/.aws/credentials file exists, Success" \
