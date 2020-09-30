@@ -64,13 +64,13 @@ EOF
 
 resource "aws_iam_role_policy_attachment" "product-attach" {
   role      = aws_iam_role.product_role.name
-  policy_arn = "arn:aws:iam::aws:policy/job-function/ViewOnlyAccess"
+  policy_arn = "arn:aws:iam::aws:policy/SecurityAudit"
 }
 resource "aws_iam_role_policy_attachment" "platform-attach" {
   role      = aws_iam_role.platform_role.name
-  policy_arn = "arn:aws:iam::aws:policy/job-function/ViewOnlyAccess"
+  policy_arn = "arn:aws:iam::aws:policy/SecurityAudit"
 }
 resource "aws_iam_role_policy_attachment" "auditors-attach" {
   role      = aws_iam_role.auditors_role.name
-  policy_arn = "arn:aws:iam::aws:policy/job-function/ViewOnlyAccess"
+  policy_arn = "arn:aws:iam::aws:policy/SecurityAudit"
 }

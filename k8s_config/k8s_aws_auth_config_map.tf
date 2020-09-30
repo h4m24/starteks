@@ -13,15 +13,15 @@ resource "kubernetes_config_map" "aws_auth_update" {
   groups:
     - system:bootstrappers
     - system:nodes
-- roleARN: arn:aws:iam::${var.AWS_ACCOUNT_ID}:role/product
+- rolearn: arn:aws:iam::${var.AWS_ACCOUNT_ID}:role/product
   username: "{{SessionName}}"
   groups:
   - company:product-team
-- roleARN: arn:aws:iam::${var.AWS_ACCOUNT_ID}:role/platform
+- rolearn: arn:aws:iam::${var.AWS_ACCOUNT_ID}:role/platform
   username: "{{SessionName}}"
   groups:
   - company:platform-team
-- roleARN: arn:aws:iam::${var.AWS_ACCOUNT_ID}:role/auditors
+- rolearn: arn:aws:iam::${var.AWS_ACCOUNT_ID}:role/auditors
   username: "{{SessionName}}"
   groups:
   - company:auditors-team
