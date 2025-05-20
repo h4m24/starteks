@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "github.com/terraform-aws-modules/terraform-aws-vpc.git?ref=v2.51.0"
+  source = "github.com/terraform-aws-modules/terraform-aws-vpc.git?ref=v5.21.0"
   name   = "eks-vpc"
   cidr   = "10.20.0.0/16"
 
